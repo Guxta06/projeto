@@ -1,1 +1,0 @@
-INSERT IGNORE INTO usuarios(id, nome, email, senha_hash, grupo_id) VALUES ('USADMIN001','Administrador','admin@admin.com','$2a$10$uZ2ePiRZkJkCYwH1ZsmM0O/hJtHIzoHmr18bODsPwhj/KgOMGNJU6', 'GRADM001');
