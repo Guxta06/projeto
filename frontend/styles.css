@@ -1,0 +1,123 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== COLORS & THEME ===== */
+:root {
+  --bg: #0d1117;
+  --bg2: #161b22;
+  --card: #1c2128;
+  --text: #e6edf3;
+  --text-muted: #9da5b4;
+  --primary: #2f81f7;
+  --primary-hover: #3c91ff;
+  --danger: #f85149;
+  --radius: 10px;
+  --shadow: 0 8px 18px rgba(0, 0, 0, 0.4);
+  font-family: "Inter", Arial, sans-serif;
+}
+
+/* ===== GLOBAL ===== */
+body {
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  width: 95%;
+  max-width: 900px;
+}
+
+/* ===== CARD ===== */
+.card {
+  background: var(--card);
+  padding: 24px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin-bottom: 20px;
+}
+
+/* ===== TITLES ===== */
+h1, h2, h3 {
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.subtitle {
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+/* ===== INPUTS ===== */
+.input {
+  width: 100%;
+  padding: 12px;
+  background: var(--bg2);
+  border: 1px solid #30363d;
+  border-radius: var(--radius);
+  margin-bottom: 10px;
+  color: var(--text);
+  font-size: 15px;
+}
+
+.input:focus {
+  border-color: var(--primary);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(47,129,247,0.3);
+}
+
+/* ===== BUTTONS ===== */
+.btn {
+  padding: 12px 18px;
+  border: none;
+  border-radius: var(--radius);
+  background: var(--primary);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: var(--primary-hover);
+}
+
+.btn-danger {
+  background: var(--danger);
+}
+
+.btn-danger:hover {
+  opacity: 0.9;
+}
+
+/* ===== LIST ===== */
+.list {
+  list-style: none;
+}
+
+.list-item {
+  background: var(--bg2);
+  padding: 14px;
+  margin-bottom: 10px;
+  border-radius: var(--radius);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ===== FLEX / GRID ===== */
+.row {
+  display: flex;
+  gap: 10px;
+}
+
+.col {
+  flex: 1;
+}
